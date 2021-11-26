@@ -1,0 +1,422 @@
+.elementor-element{
+	.elementor-widget-shortcode:empty{ margin:0;}
+	&.product_detail .content_product_detail {
+		.item-meta{
+			margin-top: 0;			
+		}
+		.cart .quantity{
+			.plus{
+				background-position:top 14px center;
+			}
+			.minus{
+				background-position:top 14px center;
+			}
+		}
+		.product-countdown{
+			.countdown-row{
+				.countdown-section{
+					padding: 6px 0; margin-right: 10px;
+					.rtl &{
+						margin-right: 0; margin-left: 10px;
+					}
+					.countdown-amount{
+						width: 55px;
+					}
+				}
+			}
+		}
+	}
+}
+.box-shortcode-e{
+	position: static;
+}
+.woocommerce {
+	.product-image-e{
+		span.onsale{
+			display: none;
+		}
+	}
+	div.product.elementor .quantity+.button{
+		margin-left: 0;
+	}
+	&.rtl{
+		div.product.elementor .quantity+.button{
+			margin-right: 0; margin-left: 5px;
+		}
+	}
+}
+.elementor-woo-meta--view-stacked .product_meta {
+	.posted_in.detail-container{
+		margin-bottom: 10px;
+	}
+	.detail-label{
+		font-weight: 500;
+	}
+}
+.blog-list-elementor{
+	.elementor-post__title a:hover{
+		color: @color !important;
+	}
+	.elementor-post__text {
+		font-size: 16px; color: #555; line-height: 1.7;
+		.more-link{
+			display: none;
+		}
+	}
+}
+.elementor-pagination{
+	.page-numbers{
+		background: #f5f5f5; width: 40px; height: 40px; line-height: 40px; text-align: center; border-radius: 50%; display: inline-block; vertical-align: top; .transition(all 0.3s);
+		&:hover, &.current{
+			background: @color; color: #fff !important; .transition(all 0.3s);
+		}
+		&.prev{
+			display: none;
+		}
+		&.next{
+			font-size: 0;
+			&:before{
+				content: "\f105"; font-family: fontawesome; font-size: 16px;
+				.rtl &{
+					content: "\f104";
+				}
+			}
+		}
+	}
+}
+.single-post-template{
+	.content{
+		h2,h3,h4,h5,h6{
+			color: @body-color; margin-bottom: 25px;
+			strong{
+				font-weight: 500;
+			}
+		}
+		.blog-box1{
+			margin-bottom: 10px;
+			img{
+				width: 530px; float: left; margin-right: 30px;
+				.rtl &{
+					float: right; margin-left: 30px; margin-right: 0;
+				}
+			}
+			.info{
+				overflow: hidden;
+			}
+		}
+		.blog-quote{
+			font-size:20px; position: relative; color: @color; line-height: 30px; padding-left: 35px; margin-bottom: 30px; font-style: italic;
+			.rtl &{
+				padding-left: 0; padding-right: 35px;
+			}
+			&:before{
+				content: ""; width: 4px; height: 82%; top: 10%; left: 0; background: @color; position: absolute; 
+				.rtl &{
+					left: auto; right: 0;
+				}
+			}
+		}
+		.blog-box2{
+			margin: 0 -15px;
+			img{
+				width: 50%; float: left; padding: 0 15px; clear: none;
+				.rtl &{
+					float: right;
+				}
+			}
+		}
+		ul, ol{
+			li{
+				span, em, strong{
+					font-size: 14px !important;
+				}
+			}
+		}
+		h2,h3,h4,h5,h6{
+			margin-bottom: 25px;
+		}
+		.elementor-text-editor{
+			color: #333;
+		}
+		p {
+			margin-bottom: 25px;
+			.alignnone{
+				float: none;
+				display: block;
+				clear: none;
+				margin: 20px 0 30px 0;
+				.rtl &{
+					float: right;
+				}
+				&.image-single{
+					margin-left:30px;
+				}
+			}
+		}
+	}
+	.elementor-widget-post-comments .commentlist{
+		margin: 0; padding: 0;
+		li{
+			list-style: none; clear: both;
+			.children{
+				margin-left: 90px;
+				.rtl &{
+					margin-left: 0; margin-right: 90px;
+				}
+			}
+			.comment-body{
+				.comment-author{
+					margin-bottom: 5px;
+					img{
+						width: 70px; height: 70px; margin-right: 15px; border-radius: 50%;
+						.rtl &{
+							margin-right: 0; margin-left: 15px;
+						}
+					}
+					a{
+						font-size: 16px;
+					}
+					.says{
+						display: none;
+					}
+				}
+				.comment-meta{
+					margin-bottom: 5px;
+					a{
+						font-size: 12px; color: #b3b3b3;
+					}
+				}
+				p{
+					font-size: 16px; color: #333; line-height: 27px; overflow: hidden;
+				}
+				.reply{
+					font-size: 12px; text-transform: uppercase; letter-spacing: 2px; text-align: right;
+					.rtl &{
+						text-align: left;
+					}
+					a{
+						color: #999;
+						&:hover{
+							color: @color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.above-product-widget-e{
+	border: 1px @border-color2 solid; padding: 30px 15px ; margin-bottom: 40px;
+	.widget{
+		width: 20%; float: left; padding: 0 15px; border-bottom: none; margin-bottom: 0;
+		.rtl &{
+			float: right;
+		}
+		.block-title-widget{
+			h2{
+				font-size: 14px; text-transform: uppercase; color: @body-color; font-weight: 600; 
+			}
+		}
+		ul{
+			list-style: none; margin: 0;
+			> li{
+				padding:7px 0;
+				> a{
+					display: inline-block; vertical-align: top;	font-size: 14px; color: #888; text-transform: capitalize; .transition(all 0.3s);
+					&:hover{
+						color: @body-color; .transition(all 0.3s);
+					}				
+				}
+				&:last-child{
+					padding-bottom: 0; border-bottom: none;
+				}
+				ul.children{
+					margin-left: 15px; margin-top: 8px; padding: 0 15px;
+				}
+			}
+		}
+		&.widget_product_tag_cloud{
+			.tagcloud{
+				margin:0 !important; padding:2px 15px 0 0px;
+				.rtl &{
+					padding: 2px 0 15px 0;
+				}
+				a{
+					display:inline-block;
+					color:#666; font-size: 14px !important;
+					padding:10px; text-transform: capitalize;
+					background: #f5f5f5;
+					padding:7px 10px; border-radius: 4px;
+					margin:5px 2px;
+					.transition(all 0.3s);
+					&:hover{
+						background-color:@color;
+						color:#fff; .transition(all 0.3s);
+					}
+				}
+			}
+		}
+		&.woocommerce-widget-layered-nav{
+			.widget-inner{
+				ul {
+					padding: 5px 0 0 0;
+					> li{
+						display: inline-block; vertical-align: top; margin: 0 5px 5px 0; padding: 0; .transition(all 0.3s);
+						.rtl &{
+							margin: 0 0 5px 5px;
+						}
+						a{
+							min-width: 20px; height: 20px; line-height: 18px; text-align: center;
+						}
+						&:hover, &.chosen{
+							border-color: @color; .transition(all 0.3s);
+							a{
+								background: @color; color: #fff;
+							}
+						}
+						span.count{
+							display: none;
+						}
+						&.chosen{
+							a{
+								&:before{
+									display: none;
+								}
+							}
+						}
+					}
+					&.woocommerce-widget-layered-nav-list-pa_size{
+						> li{
+							border: 1px @border-color2 solid; border-radius: 4px;
+							&.chosen, &:hover{
+								border-color: @color;
+							}
+						}
+					}
+					&.woocommerce-widget-layered-nav-list-pa_color{
+						> li{
+							padding: 3px; border: 1px @border-color2 solid; border-radius: 50%;
+							&:before{
+								display: none;
+							}
+							a{
+								border-radius: 50%;
+								.variation-color{
+									display: block; height: 20px; border-radius: 50%;
+								}
+								.name-color{
+									display: none;
+								}
+							}
+							&.chosen, &:hover{
+								border: 1px @color solid;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.sw_brand_filter{
+			ul{
+				li{
+					a{
+						position: relative;
+						&:before{
+							content: "\f00c"; font-family: fontawesome; font-weight: normal; border: 1px #eee solid; width: 16px; height: 16px; line-height: 16px; text-align: center;
+							display: inline-block; vertical-align: top; color: @body-color; background: #fff; border: 1px @border-color2 solid; font-size: 0; margin-right: 8px; .transition(all 0.3s);
+							.rtl &{
+								margin-right: 0; margin-left: 8px;
+							}
+						}
+					}
+					&.active, &:hover{
+						a{
+							background: transparent; color: @body-color;
+							&:before{
+								font-size: 12px; border: 1px @body-color solid; color: @body-color; .transition(all 0.3s);
+							}
+						}
+					}
+				}
+			}
+		}
+		&.widget_tag_cloud{
+			.tagcloud{
+				margin:0 !important; padding:5px 0 0 0;
+				a{
+					display:inline-block;
+					color:#666; font-size: 14px !important;
+					padding:10px; text-transform: capitalize;
+					border:1px solid @border-color;
+					padding:6px 9px;
+					margin:5px 2px;
+					.transition(all 0.3s);
+					&:hover{
+						border:1px solid @color;
+						background-color:@color;
+						color:#fff; .transition(all 0.3s);
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+@media(max-width: 1199px){
+	.single-post-template, .blog-list-elementor{
+		.sidebar{
+			order:1;
+		}
+	}
+	.single-post-template .content .blog-box1 .info{
+		overflow: inherit;
+	}
+}
+
+@media(max-width: 991px){
+	.elementor.product{
+		.content-product{ order:1;}
+		.sidebar1{ order:2; }
+		.product_detail{
+			.slider_img_productd, .content_product_detail{
+				width:100%;
+			}
+		}
+	}
+	.blog-list-elementor {
+		.elementor-post__title {
+			line-height: 30px !important;
+			a{
+				font-size: 24px !important;
+			}
+		}
+		.elementor-post__text{
+			font-size: 14px;
+		}
+	}
+	.single-post-template .elementor-widget-post-comments .commentlist li .children{
+		margin-left: 10px;
+		.rtl &{
+			margin-left: 0; margin-right: 10px;
+		}
+	}
+}
+
+@media(max-width: 767px){
+	.box-content-archive{
+		>.elementor-container{
+			display: flex; flex-wrap: wrap;
+		}
+		.sidebar{
+			order: 1;
+		}
+	}
+	.single-product .content-product >.elementor-element-populated{
+		padding: 0 5px;
+	}
+	.elementor.product .product_detail .content_product_detail .reviews-content{
+		margin-top: 0;
+	}
+}

@@ -1,0 +1,27 @@
+.wrapper_404 {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	.content_404 {
+		overflow:hidden; width: 100%; padding:120px 0;
+		.erro-image img{
+			margin: 0 auto 75px auto;
+		}
+		.block-top{
+			margin-bottom: 35px;
+			h2{
+				font-size: 30px; font-weight: normal; margin-bottom: 16px; color: @body-color;
+			}
+		}
+		.block-bottom{
+			a{
+				font-size: 13px; color: #fff; background: @color; height: 50px; line-height: 50px; padding: 0 30px; letter-spacing: 2px; font-weight: 600;
+				display: inline-block; vertical-align: top; text-transform: uppercase; .transition(all 0.3s);
+				clip-path: polygon(9% 0%,100% 0%,100% 0%,100% 100%,80% 100%,0% 100%,0% 0%,0% 30%);
+				&:hover{
+					background: @body-color; .transition(all 0.3s);
+				}
+			}
+		}
+	}
+}

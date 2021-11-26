@@ -1,0 +1,79 @@
+@media (min-width: 1800px) {
+	body.boxed-layout{
+		.header-elementor1{
+			.boxed-left{
+				width: 16% !important;
+			}
+			.boxed-right{
+				width: 84% !important;
+			}
+		}
+	}
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+	.testimonial-slider3:before{
+		right: 0;
+		.rtl &{
+			right: auto; left: 0;
+		}
+	}
+	.header-elementor1{
+		.logos a img{
+			max-width: 185px; padding-top: 5px;
+		}
+	}
+	.header-style1 .kontruk-logo a img{
+		max-width: 185px;
+	}
+}
+@media (min-width: 1200px) {
+	.sidebar-row{
+		.sidebar{
+			&#left{
+				width: 28.5%; padding-right: 57px;
+				.rtl &{
+					padding-right: 0; padding-left: 57px;
+				}
+			}
+			&#right{
+				width: 28.5%; padding-left: 57px;
+				.rtl &{
+					padding-left: 0; padding-right: 57px;
+				}
+			}
+		}
+		.category-contents.col-lg-9, .single.main.col-lg-9, #contents.col-lg-9{
+			width: 71.5%;
+		}
+		.single.main.col-lg-12 .has-post-thumbnail{
+			.entry-content{
+				width: 70%;	margin: 0 auto; position: relative;
+				.social-share{
+					position: absolute; top: 45px; left: -100px;
+					-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);-moz-transform: rotate(90deg);-o-transform: rotate(90deg);transform: rotate(90deg);
+					.rtl &{
+						left: auto; right: -100px;
+					}
+					a{
+						-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-o-transform: rotate(-90deg);transform: rotate(-90deg);
+					}
+				}
+			}
+			.single-post-relate, #comments, #respond, #authorDetails, .post-navigation{
+				width: 70%; margin-left: auto; margin-right: auto;
+			}
+		}
+	}
+	.contact-foot{
+		padding-right: 50px;
+		.rtl &{
+			padding-right: 0; padding-left: 50px;
+		}
+	}
+	.footer-style2 .top-left1{
+		padding-right: 20px;
+		.rtl &{
+			padding-right: 0; padding-left: 20px;
+		}
+	}
+}

@@ -1,0 +1,431 @@
+.footer {
+	margin-top: 44px;
+	.footer-copyright{
+		background: #fff; padding: 0 0 30px 0;
+		.copyright-text{
+			text-align: center;	
+			p{
+				font-size: 14px; margin: 0; color: @body-color;
+				a{
+					color: @color;
+				}
+			}
+		}
+	}
+}
+.contact-foot{
+	margin-bottom: 27px;
+	h3{
+		font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: @color; margin-bottom: 32px;
+	}
+	.item{
+		margin-bottom: 10px; font-size: 16px; color: #fff;
+		label{
+			display: inline-block; vertical-align: top; font-size: 16px; color: #999; font-weight: normal;
+		}
+		span, a{
+			display: inline-block; vertical-align: top; font-size: 16px; color: #fff;
+		}
+	}
+}
+.contact-foot2{
+	margin-bottom: 20px;
+	h3{
+		font-size: 18px; text-transform: capitalize; color: #fff; margin-bottom: 20px;
+	}
+	.item1{
+		font-size: 26px; font-weight: bold; margin-bottom: 10px;
+		a{
+			color: #fff;
+		}
+	}
+	.item2{
+		font-size: 14px; color: #ccc; margin-bottom: 10px;
+		a{
+			color: @color; display: block; padding-top: 10px;
+		}
+	}
+}
+.socials-footer{
+	h3{
+		font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: @color; margin-bottom: 37px;
+	}
+	ul{
+		margin: 0; 
+		li{
+			display: inline-block; vertical-align: top; margin-right: 6px; margin-bottom: 6px;
+			.rtl &{
+				margin-right: 0; margin-left: 6px;
+			}
+			a{
+				height:40px; line-height:40px; width:40px; text-align:center;
+				display:inline-block; font-size:16px; color:#fff;
+				background-color: rgba(255,255,255,0.1);				
+				.transition(all 0.3s);
+				.fa::before{
+					line-height:40px; font-weight: normal;
+				}
+				&:hover{
+					background: @color; .transition(all 0.3s);
+				}
+			}
+		}
+	}
+	&.style2{
+		ul li a{
+			background: transparent; text-align: left; width: 20px;
+			.rtl &{
+				text-align: right;
+			}
+			&:hover{
+				color: @color;
+			}
+		}
+	}
+}
+.nav-menu1{
+	margin-bottom: 30px;
+	h5{
+		font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: @color; margin-bottom: 25px;
+	}
+	ul.menu{
+		li{
+			width: 50%; float: left; margin-bottom: 8px;
+			.rtl &{
+				float: right;
+			}
+			a{
+				font-size: 16px; color: #999; display: block; padding: 6px 0;
+				&:hover{
+					color: @color;
+				}
+			}
+		}
+	}
+}
+.nav-menu2{
+	margin-bottom: 30px;
+	h5{
+		font-size: 18px; text-transform: capitalize; color: #fff; margin-bottom: 20px; font-weight: normal;
+	}
+	ul.menu{
+		li{
+			a{
+				font-size: 14px; color: #ccc; display: block; padding: 6px 0;
+				&:hover{
+					color: @color;
+				}
+			}
+		}
+	}
+}
+.nav-menu3 ul li a{
+	color: #fff; text-transform: uppercase; font-size: 12px; font-weight:600;
+	&:hover{
+		color: @color;
+	}
+}
+.newsletter-footer{
+	h3{
+		font-size: 26px;color: @color; line-height: 24px; text-transform: capitalize; margin-bottom: 16px;
+	}
+	>p{
+		line-height: 23px; color: #fff; margin-bottom: 29px;
+	}
+	.form-newsletter{
+		margin-bottom: 10px; 
+		.mc4wp-form-fields{
+			overflow: hidden;
+		}
+		p{
+			margin-bottom: 15px;
+		}
+		input{
+			border: none; color:#fff; width: 100%; height:45px; padding: 0 15px; border-radius: 0; margin: 0; background: rgba(255,255,255,0.1); .transition(all 0.3s);
+			.rtl &{
+				text-align: right;
+			}
+			&:focus, &:hover{
+				background: #fff; color: @body-color; .transition(all 0.3s);
+				&::-webkit-input-placeholder {
+					color: @body-color;
+				}
+				&::-moz-placeholder {
+					color: @body-color; 
+				}
+				&:-ms-input-placeholder { 
+					color: @body-color;
+				}
+			}
+		}
+		input::-webkit-input-placeholder {
+			color: #fff;
+		}
+		input::-moz-placeholder {
+			color: #fff;  
+		}
+		input:-ms-input-placeholder {  
+			color: #fff; 
+		}
+		textarea{
+			border: none; color:#fff; width: 100%; padding: 15px; border-radius: 0; margin: 0; background: rgba(255,255,255,0.1); min-height: 90px; .transition(all 0.3s);
+			.rtl &{
+				text-align: right;
+			}
+			&:focus, &:hover{
+				background: #fff; color: @body-color; .transition(all 0.3s);
+				&::-webkit-input-placeholder {
+					color: @body-color;
+				}
+				&::-moz-placeholder {
+					color: @body-color; 
+				}
+				&:-ms-input-placeholder {  
+					color: @body-color;
+				}
+			}
+		}
+		textarea::-webkit-input-placeholder {
+			color: #fff;
+		}
+		textarea::-moz-placeholder {
+			color: #fff; 
+		}
+		textarea:-ms-input-placeholder {  
+			color: #fff; 
+		}
+		input[type="submit"]{
+			border: none; width: 100%; background: @color; height:45px; line-height: 45px; color:#fff; text-transform:uppercase;
+			border-radius: 0; padding: 0; font-size: 12px; font-weight: 600; text-align: center; letter-spacing: 1px; .transition(all 0.3s);
+			&:hover{
+				background:darken(@color, 10%); .transition(all 0.3s);
+			}
+		}
+		.mc4wp-success{
+			color: @color;
+		}
+	}
+	&.style2{
+		h3{
+			font-size: 14px; margin-bottom: 24px; letter-spacing: 2px;
+		}
+		.form-newsletter {
+			p{
+				input, textarea{
+					border:1px @color solid; background: transparent;
+					&:hover{
+						background: #fff;
+					}
+				}
+				input::-webkit-input-placeholder {
+					color: #999;
+				}
+				input::-moz-placeholder {
+					color: #999;  
+				}
+				input:-ms-input-placeholder {  
+					color: #999; 
+				}
+				textarea::-webkit-input-placeholder {
+					color: #999;
+				}
+				textarea::-moz-placeholder {
+					color: #999; 
+				}
+				textarea:-ms-input-placeholder {  
+					color: #999; 
+				}
+			}
+			.cf-name{
+				width: 48%; margin-right: 4%; float: left;
+				.rtl &{
+					float: right;  margin-right: 0; margin-left: 4%; 
+				}
+			}
+			.cf-mail{
+				width: 48%; float: left;
+				.rtl &{
+					float: right;
+				}
+			}
+			.cf-sub{
+				clear: both;
+			}
+			input[type="submit"]{
+				color: #00235a; background: #fff; font-size: 14px;
+				&:hover{
+					background: @color;
+				}
+			}
+		}
+	}
+}
+.newsletter-footer2{
+	color: #999;
+	p{
+		line-height: 22px; margin-bottom: 0;
+	}
+	.form-newsletter{
+		margin-bottom: 18px;
+		.mc4wp-form-fields{
+			overflow: hidden; border-bottom: 1px #fff solid;
+		}
+		input[type="email"]{
+			color: #fff; border: none; text-align: left; width: 85%; float: left; background: transparent; margin-bottom: 0; padding: 0; margin: 0 0 10px 0; font-size: 14px;
+			.rtl &{
+				text-align: right; float: right;
+			}
+		}
+		input::-webkit-input-placeholder {
+			color: #fff;
+		}
+		input::-moz-placeholder {
+			color: #fff; 
+		}
+		input:-ms-input-placeholder {  
+			color: #fff; 
+		}
+		button[type="submit"]{
+			border: none; font-size: 0; width: 15%; float: left; background: transparent; margin-bottom: 0; .transition(all 0.3s);
+			.rtl &{
+				float: right;
+			}
+			&:before{
+				content:""; background: url(../assets/img/readmore-arrow3.svg) no-repeat center right;
+				display: block; background-size: 16px; height: 22px;
+				.rtl &{
+					background-size: 16px; .rotate(-180deg);
+				}
+			}
+		}
+		.mc4wp-success{
+			color: @body-color;
+		}
+	}
+}
+.newsletter-footer3{
+	max-width: 300px;
+	h3{
+		font-size: 26px; color: #fff; line-height: 32px; font-weight: normal; margin-bottom: 30px;
+	}
+	.form-newsletter{
+		margin-bottom: 18px;
+		.mc4wp-form-fields{
+			overflow: hidden;
+		}
+		input[type="email"]{
+			color: #fff; border: none; text-align: left; width: 85%; float: left; background: #2d2d2d; margin-bottom: 0; padding: 0 15px; margin: 0; font-size: 14px;
+			height: 47px; line-height: 47px;
+			.rtl &{
+				text-align: right; float: right;
+			}
+		}
+		input::-webkit-input-placeholder {
+			color: #fff;
+		}
+		input::-moz-placeholder {
+			color: #fff; 
+		}
+		input:-ms-input-placeholder {  
+			color: #fff; 
+		}
+		button[type="submit"]{
+			border: none; font-size: 0; width: 15%; float: left; background: #2d2d2d; margin-bottom: 0; height: 47px; line-height: 47px; text-align: center; .transition(all 0.3s);
+			.rtl &{
+				float: right;
+			}
+			&:before{
+				content:"\f1d8"; font-family: "fontawesome"; display: block; font-size: 14px; color: #fff;
+			}
+		}
+		.mc4wp-success{
+			color: @body-color;
+		}
+	}
+}
+.copyright{
+	color: #f5f5f5; z-index: 2; position: relative; line-height: 23px;
+	a{
+		color: @color;
+	}
+	address{
+		text-align: center;
+	}
+	&.style2{
+		color: @body-color; text-align: center;
+	}
+	&.style3{
+		text-align: center;
+	}
+	&.style4{
+		text-align: center; font-size: 12px;
+	}
+}
+.footer-style1{
+	position: relative;
+	&:before{
+		content: ""; background: #002052; width: 42%; height: 100%; position: absolute; top: 0; left: 58%;
+		.rtl &{
+			left: auto; right: 58%;
+		}
+	}
+	&:after{
+		content: ""; background: #002052; width: 54%; height: 85px; position: absolute; bottom: 0; left: 0;
+		.rtl &{
+			left: auto; right: 0;
+		}
+	}
+}
+.footer-style2{
+	.contact-foot h3, .nav-menu1 h5{
+		color: #fff;
+	}
+}
+.footer-style3 .newsletter-footer2{
+	max-width: 270px;
+}
+.footer-style5{
+	.contact-foot {
+		h3{
+			letter-spacing: 2px; margin-bottom: 38px;
+		}
+		.item {
+			margin-bottom: 15px; font-size: 14px;
+			span, a, label{
+				font-size: 14px;
+			}
+		}
+	}
+	.nav-menu1 {
+		h5{
+			letter-spacing: 2px; margin-bottom: 30px;
+		}
+		ul.menu li a{
+			font-size: 14px;
+		}
+	}
+	.socials-footer h3{
+		letter-spacing: 2px;
+	}
+}
+.footer-services >.elementor-container{
+	padding: 10px 65px; background: #fff;
+}
+#kontruk-totop {
+	box-shadow: 0 0 1px 1px @border-color;
+	bottom: 80px; right: 27px; background: #fff;
+	text-align: center; position: fixed;
+	height: 40px; width: 40px; line-height: 40px;
+	z-index: 9; color: @body-color;
+	.opacity(1); .border-radius(50%); .transition(all .3s); .rotate(-90deg);
+	&:before{
+		content: '\f197'; font-family: fontawesome; font-size: 14px;
+	}
+	&:hover {
+		background: @color; color: #fff; .transition(all .3s);
+	}
+	.rtl & {
+		right: auto;
+		left: 15px;
+	}
+}

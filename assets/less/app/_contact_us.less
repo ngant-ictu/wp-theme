@@ -1,0 +1,131 @@
+.wpcf7{
+	.wp-input {
+		margin: 0 -15px;
+		.wpcf7-form-control-wrap{
+			width:33.333%;
+			float: left;
+			padding: 0 15px;
+			input{
+				width:100%;
+				.border-radius(0);
+			}
+			input::-webkit-input-placeholder {
+				color: #555;
+			}
+			input::-moz-placeholder {  
+				color: #555;  
+			}
+			input:-ms-input-placeholder {  
+				color: #555; 
+			}
+			.wpcf7-text{
+				height:40px;
+				border:1px solid @border-color;
+				font-size:13px;
+				color:#555;
+				padding:10px 20px;
+				margin-bottom:20px;
+			}
+		}
+	}
+	textarea{
+		padding:10px 20px;
+		height:40px;
+		border:1px solid @border-color;
+		width:100%;
+		min-height:150px;
+		.border-radius(0);
+	}
+	textarea::-webkit-input-placeholder {
+		color: #555;
+	}
+	textarea::-moz-placeholder {  
+		color: #555;  
+	}
+	textarea:-ms-input-placeholder {  
+		color: #555; 
+	}
+	&.your-message{
+		float:none;
+		clear:both;
+	}
+	.wpcf7-submit{
+		margin-top:10px;
+		color:#fff; line-height: 40px;
+		font-size:14px;
+		text-transform:uppercase;
+		border:0;
+		background-color:@body-color;
+		padding:0 30px;
+		.border-radius( 42px);
+		.rtl &{
+			float: right;
+		}
+		&:hover{
+			background-color:@color;
+		}
+	}
+	p{
+		position: relative;
+		.ajax-loader{
+			position: absolute; top: 10px; right: 0;
+		}
+	}
+	.wpcf7-response-output{
+		color: #fff; margin: 0 !important;
+	}
+}
+.contact-add{
+	border-bottom: 1px @border-color2 solid; padding: 2px 30px 26px 30px;
+	h3{
+		font-size: 40px; color: @body-color; text-transform: uppercase; letter-spacing: -0.02em; margin-bottom: 2px;
+	}
+	.des{
+		font-size: 12px; margin-bottom: 25px; padding-bottom: 23px; position: relative; text-transform: uppercase; letter-spacing: 1px;
+		&:before{
+			content: ""; width: 50px; height: 3px; background: @color; position: absolute; bottom: 0; left: 0;
+			.rtl &{
+				left: auto; right: 0;
+			}
+		}
+	}
+	ul{
+		list-style: none; margin: 0;
+		li{
+			overflow: hidden; margin-bottom: 16px;
+			label{
+				font-size: 15px; color: @body-color; float: left; width: 50%;
+				.rtl &{
+					float: right;
+				}
+			}
+			span{
+				font-size: 15px; color: @body-color; display: block; overflow: hidden; line-height: 26px;
+			}
+			a{
+				font-size: 15px; color: #56b0e3; display: block; overflow: hidden;
+				&:hover{
+					color: @color;
+				}
+			}
+		}
+	}
+}
+.hiring{
+	text-align: center; padding: 8px 0;
+	label{
+		font-size: 12px; background: @color; color: #fff; padding: 5px 15px; text-transform: uppercase; font-weight: normal; letter-spacing: 1px; margin-right: 5px;
+		.rtl &{
+			margin-right: 0; margin-left: 5px;
+		}
+	}
+	span{
+		color: @body-color;
+	}
+	a{
+		color: @color; border-bottom: 1px @color solid;
+		&:hover{
+			color: @body-color; border-bottom: 1px @body-color solid;
+		}
+	}
+}

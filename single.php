@@ -1,0 +1,1 @@
+<?php kontruk_content_detail_check() ?>

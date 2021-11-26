@@ -1,0 +1,105 @@
+@import "bootstrap/responsive-utilities.less";
+@import "responsive/min-1200.less";
+@import "responsive/max-1199.less";
+@import "responsive/min-992-max-1199.less";
+@import "responsive/max-991.less";
+@import "responsive/min-768-max-991.less";
+@import "responsive/max-767.less";
+@import "responsive/max-640.less";
+@import "responsive/min-481-max-640.less";
+@import "responsive/max-480.less";
+@import "responsive/max-360.less";
+@import "responsive/max-320.less";
+@import "responsive/mobile.less";
+
+@media (min-width: 1200px) { 
+	.container{
+		max-width: 1200px;
+	}
+	.clear_lg {
+		clear: both;
+	}
+	.rtl{
+		[class*="col-lg-"], [class*="col-md-"], [class*="col-sm-"], [class*="col-xs-"] {
+			float: right;
+		}
+	}
+}
+@media (max-width: 1199px) and ( min-width: 992px ) {
+	.clear_md {
+		clear: both;
+	}
+	.col-md-24{
+		width: 20%;
+	}
+	.rtl{
+		[class*="col-md-"], [class*="col-sm-"], [class*="col-xs-"] {
+			float: right;
+		}
+	}
+}
+
+@media (max-width: 991px) and ( min-width: 768px ) { 
+	.col-sm-24{
+		width: 20%;
+	}
+	#cpanel-form a.cpanel-control {
+		display: none;
+	}
+	.rtl{
+		[class*="col-sm-"], [class*="col-xs-"] {
+			float: right;
+		}
+	}
+}
+
+@media (max-width: 767px) { 
+	.clear_xs {
+		clear: both;
+	}	
+	.sidebar-row{
+		display: -webkit-flex;
+		display: -ms-flex; // IE11
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		aside#left{
+			order: 1;
+			width: 100%;
+		}
+		aside#right{
+			order: 1;
+			width: 100%;
+		}
+		> div{
+			width: 100%;
+		}
+	}
+	.service .entry-wrap{
+		display: -webkit-flex;
+		display: -ms-flex; // IE11
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		.entry-sidebar{
+			order: 1;
+		}
+	}
+	.rtl{
+		[class*="col-xs-"] {
+			float: right;
+		}
+	}
+}
+@media (max-width: 479px) {
+	[class*="col-xs-"] {
+		float: none; width: 100%;
+	}
+	.rtl{
+		[class*="col-xs-"] {
+			float: none; width: 100%;
+		}
+	}
+}

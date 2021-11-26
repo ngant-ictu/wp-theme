@@ -1,0 +1,57 @@
+.rtl .pull-left {
+  float: right;
+}
+.rtl .pull-right {
+  float: left;
+}
+.rtl .fancybox-close {
+  left: -5px;
+  right: auto;
+}
+.rtl .column-1,
+.rtl .column-2,
+.rtl .column-3,
+.rtl .column-4,
+.rtl .column-5,
+.rtl .column-6,
+.rtl .column-7,
+.rtl .column-8,
+.rtl .column-9,
+.rtl .column-10 {
+  float: right;
+}
+.rtl .dropdown-menu {
+  left: 0;
+  right: auto;
+}
+.rtl .elementor-9517 .elementor-element.elementor-element-f29c458 {
+  text-align: right;
+}
+.rtl .img-left {
+  text-align: right !important;
+}
+.rtl .img-left .elementor-image-box-wrapper {
+  text-align: right !important;
+}
+.rtl .img-right {
+  text-align: left !important;
+}
+.rtl .img-right .elementor-image-box-wrapper {
+  text-align: left !important;
+}
+.rtl .elementor-align-right {
+  text-align: left;
+}
+.rtl .elementor-align-left {
+  text-align: right;
+}
+.rtl .ictext-left .elementor-icon-box-wrapper {
+  text-align: right !important;
+}
+.rtl .elementor-12582 .elementor-element.elementor-element-6c94dbd5 > .elementor-widget-container {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.rtl .elementor-position-left .elementor-image-box-wrapper {
+  text-align: right;
+}

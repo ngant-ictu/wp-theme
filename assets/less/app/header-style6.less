@@ -1,0 +1,103 @@
+.header-elementor6{
+    .top-left1, .top-right1{
+        >.elementor-element-populated >div{
+            margin-bottom: 0;
+        }
+    }
+    .top-logo {
+        img{
+            -webkit-filter: brightness(0) sepia(0);
+            filter: brightness(0) sepia(0);
+        }
+        >.elementor-element-populated {
+            .justify-content(flex-start);
+            >div{
+                flex-direction: row;
+                align-items: baseline;
+                justify-content: flex-start;
+                width:auto;
+            }
+        }
+    }
+    .nav-pills >li {
+        &.dropdown {
+            > a{
+                position:relative; padding: 30px 15px 30px 0;
+                .rtl &{
+                    padding: 30px 0 30px 15px;
+                }
+                &:after{
+                    content:'\f0d7'; font-family:FontAwesome;
+                    position:absolute; right:0px; font-size: 12px;
+                    .rtl &{
+                        left:0px; right:auto;
+                    }
+                }
+            }
+        }
+        > a{
+            position: relative; padding: 30px 0; font-weight: 500; letter-spacing: 0px; font-size: 11px;
+            .rtl &{
+                padding: 30px 0;
+            }
+        }
+    }
+    .a-visit{
+        margin-top: 19px; margin-left: 30px;
+        .rtl &{
+            margin-left: 0; margin-right: 30px;
+        }
+    }
+    &.elementor-sticky--effects{
+        background: #fff; box-shadow: 0 1px 2px #eee;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+}
+@media (max-width: 1199px) {
+
+}
+@media (max-width: 991px) {
+    .header-elementor6{
+        .main-menu{
+            margin-top: 19px;
+        }
+        .a-visit{
+            margin-top: 16px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .header-elementor6{
+        .top-logo{
+            width: 100%;
+            >.elementor-element-populated{
+                .justify-content(center);
+            }
+        }
+        .top-right1{
+            width: 100%; margin-bottom: 15px;
+            >.elementor-element-populated{
+                .justify-content(space-between);
+            }
+
+        }
+        .a-visit{
+            margin-top: 0;
+        }
+        .main-menu{
+            margin-top: 1px;
+        }
+    }
+    .policy-text1 .elementor-icon-box-wrapper{
+        .flex-display(flex);
+        .elementor-icon-box-icon{
+            margin-top: 6px; margin-right: 12px !important;
+            .rtl &{
+                margin-right: 0 !important; margin-left: 12px !important;
+            }
+        }
+    }
+}

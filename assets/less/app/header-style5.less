@@ -1,0 +1,243 @@
+.header-elementor5{
+    .top-left1, .top-right1{
+        >.elementor-element-populated >div{
+            margin-bottom: 0;
+        }
+    }
+    .menu-center{
+        .elementor-element-populated{
+            padding:0 15px !important;
+        }
+    }
+    .free{
+        color: #fff; font-size: 12px;
+        a{
+            color: #fff;
+            i{
+                padding: 0 3px;
+                .rtl &{
+                    &:before{
+                        content: "\f104";
+                    }
+                }
+            }
+            &:hover{
+                color: @color;
+            }
+        }
+    }
+    .order{
+        position: relative; margin-top: 2px;
+        &:before{
+            content: ""; width: 1px; height: 12px; background: rgba(255,255,255,0.2); position: absolute; top: 12px; right: 0;
+            .rtl &{
+                right: auto; left: 0;
+            }
+        }
+        a{
+            display: inline-block; vertical-align: top; color: #fff; font-size: 12px; text-transform: capitalize; margin: 10px 18px 10px 0;
+            .rtl &{
+                margin: 10px 0 10px 18px;
+            }
+            &:hover{
+                color: @color;
+            }
+        }
+    }
+    #lang_sel{
+        a.lang_sel_sel:after{
+            line-height: 16px;
+        }
+        > ul.nav {
+            margin: 0 15px;
+            > li {
+                padding: 12px 0 8px 0;
+                > a{
+                    color: #fff; font-size: 12px;
+                    &:after{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .currency_w > li{
+        padding: 12px 0 9px 0;
+        > a{
+            color: #fff; font-size: 12px;
+            &:after{
+                color: #fff;
+            }
+        }
+    }
+    .nav-pills >li {
+        &.dropdown {
+            > a{
+                position:relative; padding: 12px 12px 12px 0;
+                .rtl &{
+                    padding: 12px 0 12px 12px;
+                }
+                &:after{
+                    content:'\f0d7'; font-family:FontAwesome;
+                    position:absolute; right:0px; font-size: 12px;
+                    .rtl &{
+                        left:0px; right:auto;
+                    }
+                }
+            }
+        }
+        > a{
+            color: #fff; position: relative; padding: 12px 0; text-transform: capitalize; font-weight: 500; letter-spacing: 0px;
+            .rtl &{
+                padding: 12px 0 12px 12px;
+            }
+            &:before{
+                content: ""; height: 2px; position: absolute; bottom: 0; left: 50%; right: 0; width: 0; background: #fff; .transition(all 0.3s);
+                .rtl &{
+                    left: auto; right: 50%;
+                }
+            }
+            &:hover{
+                &:before{
+                    width: 100%; left: 0;
+                    .rtl &{
+                        left: auto; right: 0;
+                    }
+                }
+            }
+        }
+        &.active{
+            > a{
+                color: #fff;
+                &:before{
+                    width: 100%; left: 0;
+                    .rtl &{
+                        left: auto; right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .mega-left-title{
+        background: rgba(0,0,0,0.1); padding: 0 25px;
+    }
+    .wrapper_vertical_menu .vertical-megamenu{
+        max-width: 217px;
+    }
+    &.header-mid{
+        .wishlist{
+            position: relative; font-size: 0; margin-left: 35px; display: block; margin-top: 14px;
+            .rtl &{
+                margin-left: 0; margin-right: 35px;
+            }
+            &:before{
+                content:"\f08a"; font-family: Fontawesome; display: block; color: #fff; font-size: 24px; .transition(all 0.3s);
+            }
+            &:hover{
+                &:before{
+                    color: @color; .transition(all 0.3s);
+                }
+            }
+        }
+        .top-login{
+            margin-top: 10px; border-left: 1px #fff solid;
+            .rtl &{
+                border-left: none; border-right: 1px #fff solid;
+            }
+        }
+        .phone-mail{
+            padding-top: 5px; margin-left: 50px;
+            .rtl &{
+                margin-left: 0; margin-right: 50px;
+            }
+            .item{
+                &:before{
+                    background: url(../assets/img/phone.svg) no-repeat center center; background-size: 22px;
+                }
+                span{
+                    color: #fff;
+                }
+                a{
+                    color: @color;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .header-elementor5{
+        .revo_top .top-form.top-search{
+            width: 517px;
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .header-elementor5{
+        &.header-mid {
+            .phone-mail{
+                display: none;
+            }
+            .top-login{
+                border: none;
+                .rtl &{
+                    border: none;
+                }
+            }
+        }
+        .revo_top .top-form.top-search{
+            width: 450px;
+        }
+        .mega-left-title{
+            padding: 0 6px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .header-elementor5{
+        padding: 6px 0;
+        &.header-bottom{
+            .top-left1{
+                display: none;
+            }
+            .menu-center{
+                width: 30%;
+            }
+            .top-right1{
+                width: 70%;
+            }
+        }
+        &.header-mid{
+            .top-left1{
+                width: 26%;
+            }
+            .top-right1{
+                width: 74%;
+                .revo_top{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .header-elementor5{
+        .free, .order{
+            display: none;
+        }
+        &.header-mid{
+            .top-left1, .top-right1{
+                width: 100%;
+                >.elementor-element-populated{
+                    .justify-content(center);
+                }
+            }
+        }
+        .top-login ul{
+            margin-left: 0;
+            .rtl &{
+                margin-right: 0;
+            }
+        }
+    }
+}

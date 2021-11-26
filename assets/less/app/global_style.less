@@ -1,0 +1,293 @@
+/*============ title style1=================*/
+.title-style1{
+	.rtl &{
+		direction: rtl;
+	}
+	.block-title{
+		margin-bottom: 35px; max-width: 480px; position: relative;
+		&:before{
+			content: ""; width: 20px; height: 3px; background: @color; position: absolute; top: -12px; left: -20px;
+			.rtl &{
+				left: auto; right: -20px;
+			}
+		}
+		&:after{
+			content: ""; height: 20px; width: 3px; background: @color; position: absolute; top: -12px; left: -20px;
+			.rtl &{
+				left: auto; right: -20px;
+			}
+		}
+		p{
+			color: #999; text-transform: uppercase; letter-spacing: 1px; font-size: 16px;
+		}
+		h3{
+			font-size: 36px; font-weight: bold; color: @body-color; position: relative; padding-bottom: 31px; line-height: 42px; letter-spacing: -0.02em;
+			&:before{
+				content: ""; width: 100px; height: 5px; background: @color; position: absolute; bottom: 0; left: 0;
+				.rtl &{
+					left: auto; right: 0;
+				}
+			}
+		}
+	}
+	.more a{
+		font-size: 12px; color: #fff; background: @color; text-transform: uppercase; display: inline-block; vertical-align: top; height: 45px; line-height: 45px; 
+		padding: 0 31px; letter-spacing: 1px; margin-top: 70px;
+		&:hover{
+			background: @body-color;
+		}
+	}
+}
+.title-style2{
+	.block-title{
+		text-align: center; margin-bottom: 35px;
+		h3{
+			font-size: 45px; color: @body-color; padding-top: 40px; margin-bottom: 30px; font-weight: 600; max-width: 540px; margin: 0 auto; line-height: 54px; position: relative;
+			&:before{
+				content: ""; width: 100px; height: 32px; background: url( ../assets/img/line.png ) no-repeat center center; position: absolute; top: 0; left: 50%; margin-left: -50px;
+			}
+		}
+	}
+}
+/*============ button style1=================*/
+.button-style1{
+	.res-button{
+		display:inline-block; position:absolute; bottom:15%; cursor:pointer; z-index:3; text-align: center; 
+		&.slick-next{
+			right:50px; 
+			.rtl &{
+				left: 50px; right:auto;
+			}
+			&:before{
+				content: ""; background: url( ../assets/img/readmore-arrow3.svg ) no-repeat center center; .transition(all 0.3s);
+				display: block; width: 25px; height: 25px ; .rotate(180deg);
+				.rtl &{
+					.rotate(0deg);
+				}
+			}
+		}
+		&.slick-prev{
+			right: 0; 
+			.rtl &{
+				left:0; right:auto;
+			}
+			&:before{
+				content: ""; background: url( ../assets/img/readmore-arrow3.svg ) no-repeat center center; .transition(all 0.3s);
+				display: block; width: 25px; height: 25px;
+				.rtl &{
+					.rotate(180deg);
+				}
+			}
+		}
+		&:hover{
+			&:before{
+				background: url( ../assets/img/readmore-arrow.svg ) no-repeat center center; .transition(all 0.3s);
+			}
+		}
+	}
+}
+.button-style2{
+	.res-button{
+		width:30px; line-height: 50px; height:50px;
+		display:inline-block;
+		position:absolute;
+		top:50%; box-shadow: 0px 1px 4px #ccc;
+		margin-top:-25px; cursor:pointer; 
+		z-index:3; background: #fff;
+		font-size:0; text-align: center;
+		.transition(all 0.3s); opacity: 0; visibility: hidden;
+		&.slick-prev{
+			left:-45px;
+			&:before{
+				content: "\f104"; font-family: FontAwesome; font-size: 18px; color: #222; display: inline-block; .transition(all 0.3s);
+			}
+		}
+		&.slick-next{
+			right:-45px;
+			&:before{
+				content: "\f105"; font-family: FontAwesome; font-size: 18px; color: #222; display: inline-block; .transition(all 0.3s);
+			}
+		}
+		&:hover{
+			background: @color; .transition(all 0.3s);
+			&:before{
+				color: #fff; .transition(all 0.3s);
+			}
+		}
+	}
+}
+/*===========button slider=================*/
+.kontruk_social {
+	text-align: center;
+	line-height: 19px;
+	.main-social {
+		margin: 0 auto;
+		list-style-type: none;
+		li {
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 10px;
+			a {
+				color: #999999;
+				font-size: 16px;
+				&:hover {
+					color: @color;
+				}
+			}
+		}
+	}
+}
+/*Mail chim*/
+.mc4wp-form{
+	&.mc4wp-form-success{
+		.mc4wp-alert.mc4wp-success{
+			color:green; margin:15px 0;
+		}
+	}
+}
+/* ============================================================ */
+/* ============================================================ */
+.kontruk-socials{
+	ul{
+		overflow:hidden;
+		margin-top:30px;
+		margin-bottom:60px;
+		> li{
+			display:inline-block;
+			> a{
+				font-size:22px;
+				color:#fff;
+				margin-right:30px;
+				&:hover{
+					color:#faa600;
+				}
+			}
+		}
+	}
+}
+.topsearch-entry{
+	&:before{
+		content: '';
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 0;
+		background: rgba( 0,0,0, 0.6 );
+		z-index: 9;
+		.transition( all 0.3s ease-out );
+	}
+	&.on:before{
+		//height: 100%;
+	}
+	.button-search-pro.loading{		
+		&:before{
+			background-image: url( ../assets/img/loading.gif );
+			background-color: #2d2d2d;
+			background-size: 20px 20px;
+		}
+	}
+	.input-group-btn{
+		position: static;
+	}
+	.input-group{
+		display: block;
+	}
+	.search-append{
+		position: absolute;		
+		top: 105%;		
+		right: 0;
+		left: 0;
+		padding: 0;
+		min-width: 300px;
+		text-align: start;
+		border: none;		
+		.rtl &{
+			.autocomplete-suggestion > a img{
+				margin-right: 0;
+				margin-left: 10px;
+			}
+		}
+		.autocomplete-suggestions{
+			box-shadow: 0 0 0 1px #ccc;
+			background: #fff;
+			border-radius: 3px;
+		}
+		.autocomplete-suggestion{
+			clear: both;
+			padding: 0 10px;
+			margin-bottom: 15px;
+			&:first-child{
+				padding-top: 15px;
+			}
+			&:last-child{
+				padding-bottom: 15px;
+			}
+			&.no-result{
+				padding: 10px;
+			}
+			> a{
+				padding: 0 10px;
+				display: block;
+				overflow: hidden;
+				img{
+					margin-right: 10px;
+					border: 1px solid #ccc;
+				}
+			}
+			.media-body{
+				> span{
+					display: block;
+					margin-bottom: 5px;
+					font-weight: 600;
+					strong{
+						color: @color;
+					}
+				}
+				.search-meta{
+					> div, > p{
+						display: inline-block;
+						vertical-align: top;
+					}
+					.sku{
+						margin-right: 20px;
+						> span{
+							font-weight: bold;
+						}
+					}
+				}
+				.price{		
+					color: @color;
+					font-weight: bold;
+					font-size: 14px;
+					span.price-label{
+						color: #666;
+					}
+					ins{						
+						text-decoration: none;
+					}
+					del{
+						color: #999;
+					}
+				}
+			}
+		}
+	}
+}
+.onsale, .sale-off, .sw-outstock, .sw-newlabel{
+	display: none;
+}
+.item-price {
+	font-size: 14px;
+	color: @body-color;
+	overflow:hidden;
+	font-weight: 600;
+	del{
+		text-decoration: line-through; order: 2;
+		color: #6d6e71; font-size: 14px; font-weight: 400;
+	}
+	ins {
+		color: @body-color; margin: 0; text-decoration:none; margin-bottom: 3px;
+	}
+}
